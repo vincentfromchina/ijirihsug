@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择券商类型，然后选择交易软件导出的xls文件" />
+    
+    <ImageButton
+        android:id="@+id/imgguangfa"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/Btn_jiaocheng"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/guangfazhegnquan"
+        />
+    
+     <ImageButton
+        android:id="@+id/imgguoyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imgguangfa"
+        android:layout_below="@+id/imgguangfa"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/guoyuanzhegnquan"
+        />
+     
+      <LinearLayout
+        android:id="@+id/action_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_above="@+id/Btn_jiaocheng"
+         android:layout_marginBottom="3dp"
+         >
+         
+      <Button
+        android:id="@+id/btn_showresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:layout_gravity="left"
+         android:layout_marginRight="3dp"
+         android:background="@drawable/bg_button"
+        android:text="查看明细" />
+
+    <Button
+        android:id="@+id/btn_openfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:layout_gravity="center"
+        
+        android:layout_weight="2"
+        android:text="总成绩" />
+
+
+    <Button
+        android:id="@+id/Btn_fenxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="3dp"
+         android:background="@drawable/bg_button"
+        android:layout_gravity="right"
+        android:text="分析文件" />
+    
+      </LinearLayout>
+
+   <Button
+        android:id="@+id/Btn_jiaocheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/bg_button"
+        android:layout_marginBottom="3dp"
+        android:text="参看使用教程" />
+
+</RelativeLayout>

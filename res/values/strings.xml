@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">股市日记</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_excel">文件分析</string>
+    <string name="title_item_list">请选择统计类别</string>
+    <string name="title_item_detail">统计结果</string>
+    <string name="title_activity_showresult">股市日记</string>
+    <string name="bdp_image">Image</string>
+    <string name="bdp_customer_support">客服：</string>
+    <string name="bdp_tips">提示</string>
+    <string name="title_activity_upfile">UpfileActivity</string>
+
+</resources>

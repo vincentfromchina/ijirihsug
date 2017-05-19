@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#FFd6b725">
+
+	<TextView 
+	    
+	    android:id="@+id/item_detail"
+	    style="?android:attr/textAppearanceLarge"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:textIsSelectable="true"
+	    tools:context=".ItemDetailFragment" />
+	
+	<Button 
+	    android:id="@+id/btn_desc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    
+	     android:layout_alignParentRight="true"
+	     android:text="反向排序"
+	    />
+	
+	<TextView 
+	    
+	    android:id="@+id/item_jieshao"
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="2dip"
+	     android:layout_below="@+id/item_detail"
+	    tools:context=".ItemDetailFragment" />
+	
+	<TextView 
+	    
+	    android:id="@+id/item_diver"
+	    android:layout_below="@+id/item_jieshao"
+	    android:layout_width="match_parent"
+	    android:layout_height="2dip"
+	    android:background="#FF000000"
+	    
+	    tools:context=".ItemDetailFragment" />
+	
+	  <ListView
+          android:id="@+id/rec_listview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+           android:headerDividersEnabled="true"
+           android:footerDividersEnabled="false"
+           android:divider="#ff000000"
+           android:dividerHeight="2dip"
+           
+           android:layout_below="@+id/item_diver"
+           tools:context=".ItemDetailFragment"
+           >
+	      
+	  </ListView>
+	  
+  </RelativeLayout>
+
+
+
